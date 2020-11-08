@@ -2,8 +2,6 @@ import schedule
 import time
 from TradingView import TradingView
 import requests
-import datetime
-import pytz
 
 url = 'http://localhost:9090/api/Candles'
 
@@ -11,11 +9,11 @@ url = 'http://localhost:9090/api/Candles'
 def job():
     tv = TradingView(symbol="FX:EURUSD")
     result = tv.do()
+    print(result)
     requests.post(url, data=result)
-    return None
 
 
-schedule.every(1).seconds.do(job)
+schedule.every(1).minutes.do(job)
 
 while True:
     try:
