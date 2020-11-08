@@ -7,5 +7,4 @@ pip install -r requirements.txt
 
 python Schedule.py
 ~~~~
-##reference :
- https://github.com/rushic24/tradingview-scraper
+**reference :https://github.com/rushic24/tradingview-scraper**
