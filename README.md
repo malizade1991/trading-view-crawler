@@ -1,5 +1,5 @@
-# Trading View Crawler
-**The trading view data crawler (python 3.8)**
+# Trading View Scraper
+**The trading view data Scraper (python 3.8)**
 
 tv.do() => Returns the last closed candle
 ~~~~
